@@ -14,7 +14,7 @@ antigen bundle web-search
 # Bundles from the /zsh-users repository
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search.zsh
+antigen bundle zsh-users/zsh-history-substring-search
 
 # Load the theme
 antigen theme af-magic
