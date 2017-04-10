@@ -4,3 +4,27 @@
 [submodule "antigen"]
 	path = antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule "emacs.d/pkgs/github-theme"]
+	path = emacs.d/pkgs/github-theme
+	url = https://github.com/philiparvidsson/GitHub-Theme-for-Emacs.git
+[submodule "emacs.d/pkgs/use-package"]
+	path = emacs.d/pkgs/use-package
+	url = https://github.com/jwiegley/use-package.git
+[submodule "emacs.d/pkgs/evil"]
+	path = emacs.d/pkgs/evil
+	url = https://github.com/emacs-evil/evil.git
+[submodule "emacs.d/pkgs/undo-tree"]
+	path = emacs.d/pkgs/undo-tree
+	url = https://github.com/emacsmirror/undo-tree.git
+[submodule "emacs.d/pkgs/auto-compile"]
+	path = emacs.d/pkgs/auto-compile
+	url = https://github.com/tarsius/auto-compile.git
+[submodule "emacs.d/pkgs/packed"]
+	path = emacs.d/pkgs/packed
+	url = https://github.com/tarsius/packed.git
+[submodule "emacs.d/pkgs/dash"]
+	path = emacs.d/pkgs/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "emacs.d/pkgs/linum-relative"]
+	path = emacs.d/pkgs/linum-relative
+	url = https://github.com/coldnew/linum-relative.git
