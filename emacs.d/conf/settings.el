@@ -1,6 +1,10 @@
 ;; disable welcome screen
 (setf inhibit-startup-screen t)
 
+;; start in fullscreen mode
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 ;; remove menu bar
 (menu-bar-mode -1)
 
