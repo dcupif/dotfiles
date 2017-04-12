@@ -18,7 +18,7 @@
   (setq evil-emacs-state-cursor '("#969896" box))
   (setq evil-normal-state-cursor '("#a71d5d" box))
   (setq evil-visual-state-cursor '("#183691" box))
-  (setq evil-insert-state-cursor '("#a71d5d" box))
+  (setq evil-insert-state-cursor '("#a71d5d" bar))
   (setq evil-replace-state-cursor '("#a71d5d" bar))
   (setq evil-operator-state-cursor '("#a71d5d" hollow))
   
