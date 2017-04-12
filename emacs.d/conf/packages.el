@@ -26,6 +26,9 @@
   (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
   (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line))
 
+  ;; don't move back the cursor one position when exiting insert mode
+  (setq evil-move-cursor-back nil)
+
 ;; display relative line numbers
 (use-package linum-relative
   :load-path "pkgs/linum-relative"
