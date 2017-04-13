@@ -24,7 +24,10 @@
 (line-number-mode 1)
 
 ;; display matching paren
-(show-paren-mode t)
+(show-paren-mode 1)
+
+;; automatically add matching paren
+(electric-pair-mode 1)
 
 ;; highlight current line
 (global-hl-line-mode 1)
