@@ -1,3 +1,8 @@
+;; set up personal info
+;; TO BE CHANGED if you cloned my dotfiles
+(setq user-full-name "Damien Cupif")
+(setq user-mail-address "damien.cupif@gmail.com")
+
 ;; disable welcome screen
 (setf inhibit-startup-screen t)
 
