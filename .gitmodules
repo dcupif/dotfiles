@@ -28,3 +28,6 @@
 [submodule "emacs.d/pkgs/linum-relative"]
 	path = emacs.d/pkgs/linum-relative
 	url = https://github.com/coldnew/linum-relative.git
+[submodule "emacs.d/pkgs/evil-commentary"]
+	path = emacs.d/pkgs/evil-commentary
+	url = https://github.com/linktohack/evil-commentary.git

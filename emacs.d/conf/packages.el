@@ -13,7 +13,7 @@
   :config
   ;; enable evil mode
   (evil-mode 1)
-  
+
   ;; define cursor colors depending on mode
   (setq evil-emacs-state-cursor '("#969896" box))
   (setq evil-normal-state-cursor '("#a71d5d" box))
@@ -21,13 +21,20 @@
   (setq evil-insert-state-cursor '("#a71d5d" bar))
   (setq evil-replace-state-cursor '("#a71d5d" bar))
   (setq evil-operator-state-cursor '("#a71d5d" hollow))
-  
+
   ;; enable visual line browsing
   (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
   (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line))
 
   ;; don't move back the cursor one position when exiting insert mode
   (setq evil-move-cursor-back nil)
+
+;; evil commentary add-on
+(use-package evil-commentary
+  :load-path "pkgs/evil-commentary"
+
+  :config
+  (evil-commentary-mode))
 
 ;; display relative line numbers
 (use-package linum-relative
@@ -37,16 +44,16 @@
   (global-linum-mode t)
   ;; add padding next to line number
   (setf linum-format
-	(lambda (line)
-	  (propertize
-	    (format
-	      (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
-		(concat "%" (number-to-string w) "d "))
-	      line)
-	    'face
-	    'linum)))
+        (lambda (line)
+          (propertize
+            (format
+              (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
+                (concat "%" (number-to-string w) "d "))
+              line)
+            'face
+            'linum)))
 
   :config
   (linum-relative-on)
   (setf linum-relative-format "%3s "
-	linum-relative-current-symbol ""))
+        linum-relative-current-symbol ""))
