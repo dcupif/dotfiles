@@ -36,6 +36,13 @@
   :config
   (evil-commentary-mode))
 
+;; evil surround add-on
+(use-package evil-surround
+  :load-path "pkgs/evil-surround"
+
+  :config
+  (global-evil-surround-mode 1))
+
 ;; display relative line numbers
 (use-package linum-relative
   :load-path "pkgs/linum-relative"

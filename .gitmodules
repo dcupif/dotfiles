@@ -31,3 +31,6 @@
 [submodule "emacs.d/pkgs/evil-commentary"]
 	path = emacs.d/pkgs/evil-commentary
 	url = https://github.com/linktohack/evil-commentary.git
+[submodule "emacs.d/pkgs/evil-surround"]
+	path = emacs.d/pkgs/evil-surround
+	url = https://github.com/timcharper/evil-surround.git
