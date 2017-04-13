@@ -1,3 +1,10 @@
+# TO BE CHANGED if you cloned my dotfiles
 [user]
-	email = damien.cupif@gmail.com
-	name = Damien Cupif
+        email = damien.cupif@gmail.com
+        name = Damien Cupif
+
+[core]
+        editor = vim
+
+[color]
+        ui = auto
