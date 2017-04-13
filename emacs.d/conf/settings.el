@@ -4,7 +4,7 @@
 (setq user-mail-address "damien.cupif@gmail.com")
 
 ;; disable welcome screen
-(setf inhibit-startup-screen t)
+(setf inhibit-startup-screen 1)
 
 ;; start in fullscreen mode
 (custom-set-variables
@@ -33,7 +33,7 @@
 (global-hl-line-mode 1)
 
 ;; show trailing white spaces
-(setq-default show-trailing-whitespaces t)
+(setq-default show-trailing-whitespaces 1)
 
 ;; remove useless whitespace before saving a file
 (add-hook 'before-save-hook 'whitespace-cleanup)
