@@ -29,6 +29,13 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 
+;; show trailing white spaces
+(setq-default show-trailing-whitespaces t)
+
+;; remove useless whitespace before saving a file
+(add-hook 'before-save-hook 'whitespace-cleanup)
+(add-hook 'before-save-hook (lambda() (delete-trailing-whitespace)))
+
 ;; use spaces instead of tabs
 (setq-default indent-tabs-mode nil)
 
