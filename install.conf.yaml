@@ -9,6 +9,7 @@
     ~/.antigen:
     ~/.dotfiles: ''
     ~/.gitconfig:
+    ~/.zshenv:
     ~/.zshrc:
 
 - shell:
