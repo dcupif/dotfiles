@@ -1,13 +1,30 @@
 # TO BE CHANGED if you cloned my dotfiles
 [user]
-        email = damien.cupif@gmail.com
-        name = Damien Cupif
+	name = Damien Cupif
+        email = dcupif@kpler.com
 
 [core]
         editor = vim
+	pager = cat
+
+[alias]
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+	ll = lg -10
+	wdiff = diff --word-diff=color --word-diff-regex=.
+
+[grep]
+	linenumber = true
 
 [color]
         ui = auto
 
-[push]
-        default = simple
+[rebase]
+	preserve = true
+
+[pull]
+	rebase = true
+	rebase = preserve
+
+[merge]
+	conflictstyle = diff3
+	renormalize = 1

@@ -7,10 +7,7 @@
 
 - link:
     ~/.antigen:
-    ~/.bashrc:
     ~/.dotfiles: ''
-    ~/.emacs:
-    ~/.emacs.d:
     ~/.gitconfig:
     ~/.zshrc:
 
