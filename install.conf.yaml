@@ -12,6 +12,8 @@
     ~/.emacs:
     ~/.emacs.d:
     ~/.gitconfig:
+    ~/.tmux.conf:
+    ~/.zshenv:
     ~/.zshrc:
 
 - shell:
