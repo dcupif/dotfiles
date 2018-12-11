@@ -5,9 +5,43 @@
 
 [core]
         editor = vim
+	pager  = cat
+
+[alias]
+	br    = branch
+	ci    = commit
+	cia   = commit --amend
+	co    = checkout
+	cob   = checkout -b
+	dc    = diff --cached
+	di    = diff
+	dlb   = branch -d
+	drb   = push origin --delete
+	fixup = commit --fixup
+	fr    = "!git fetch && git rebase origin/master"
+	frp   = "!git fetch && git rebase origin/master && git push --force-with-lease"
+	lg    = log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+	ll    = "!git lg -10"
+	st    = status -sb
+	up    = push -u origin HEAD
+	wdiff = diff --word-diff=color --word-diff-regex=.
+
+[grep]
+	linenumber = true
 
 [color]
         ui = auto
 
 [push]
         default = simple
+
+[rebase]
+	preserve = true
+
+[pull]
+	rebase = true
+	rebase = preserve
+
+[merge]
+	conflictstyle = diff3
+	renormalize   = 1
